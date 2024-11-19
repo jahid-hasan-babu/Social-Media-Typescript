@@ -8,7 +8,7 @@ import { redirect } from "next/navigation";
 import { isRedirectError } from "next/dist/client/components/redirect";
 import { signUpSchema, signUpValues } from "@/lib/validation";
 
-export async function signup(
+export async function signUp(
   credentials: signUpValues,
 ): Promise<{ error: string }> {
   try {
